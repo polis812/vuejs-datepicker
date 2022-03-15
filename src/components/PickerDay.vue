@@ -152,7 +152,7 @@ export default {
       // number of blank days to insert after
       let numDays = 7 - (this.utils.getDay(dObj) + 1)
       if (this.mondayFirst) {
-        numDays = this.utils.getDay(dObj) > 0 ? (this.utils.getDay(dObj) + 1) : 0
+        numDays = this.utils.getDay(dObj) > 0 ? (7 - this.utils.getDay(dObj)) : 0
       }
       // return array of days to show after
       let arr = []
